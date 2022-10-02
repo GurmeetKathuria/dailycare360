@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index2.css">
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">PATIENT RECORDS</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">Dashboard</a>
+        <a class="mr-5 hover:text-gray-900">Patient Records Table</a>
+        <a class="mr-5 hover:text-gray-900">Add Records</a>
+        <a class="mr-5 hover:text-gray-900">Add Users</a>
+        <a class="mr-5 hover:text-gray-900">User Logs</a>
+      
+      </nav>     
+    </div>
+    <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+      <h1 id="" class="sm:text-2xl text-2xl font-medium title-font mb-1 text-gray-900">Our Patient Findings</h1>
+      
+    </div>
+    <section class="text-gray-600 body-font">
+      
+      <div class="container px-1\
+       py-2 mx-auto">
+        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+          <h1 class="flex-grow sm:pr-8 text-2xl font-medium title-font text-gray-600"></h1>
+         
+          
+        </div>
+      </div>
+    </section>
+    <form action="/diseaseform" method="POST">
+        <div class="card">
+      <h2></h2>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Describe Illness</label>
+            <input type="text" id="desillness" name="desillness" value="">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" id="date" name="date" value="">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>How Long You Been Suffering</label>
+            <input type="number" id="hlybs" name="hlybs" value="">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label>Surgery</label>
+            <!-- <input type="text"> -->
+            <select id="surgery" name="surgery">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label>History Of Previous Illness(Any*)</label>
+            <input type="text" id="hopi" name="hopi" value="">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label>Diagnosis</label>
+            <input type="text" id="diagnosis" name="diagnosis" value="">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Any known Allergies</label>
+            <input type="text" id="allergies" name="allergies" value="">
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="form-group">
+            <label>Medication</label>
+            <input type="text" id="medication" name="mediaction" value="">
+          </div>
+        </div>
+
+        <!-- <div class="col">
+          <div class="form-group">
+            <label>Capillary Refill</label>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+              <label>Temperature</label>
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label>Weight</label>
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label>Pulse Rate</label>
+              <input type="text">
+            </div>
+          </div> -->
+      
+        {{!-- <div class="mb-3">
+            <label for="formFile" class="form-label">Previous Reports : </label>
+            <input class="form-control" type="file" id="file" name="file">
+        </div> --}}
+
+        <!-- <div class="col">
+          <div class="form-group">
+            <label>Attending Physician</label>
+            <select id="Physicians" name="physicians">
+                <option value="p1">Physician 1</option>
+                <option value="p2">Physician 2</option>
+                <option value="p3">Physician 3</option>
+                <option value="p4">Physician 4</option>
+              </select>
+          </div>
+        </div> -->
+    
+        <div class="col">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      </div>
+    </form>
+ 
+    
+   
+      
+    </div>
+  
+ 
+    
+</body>
+</html>
